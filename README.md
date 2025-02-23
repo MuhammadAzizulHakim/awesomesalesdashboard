@@ -18,7 +18,7 @@ I add the following additional data analytic features to the dashboard:
 5. Download option:
 <br>Allow users to download filtered or full sales data as a CSV file.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://salesanalyticdashboard.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://awesomesalesdashboard.streamlit.app/)
 
 ### How to run it on your own machine
 

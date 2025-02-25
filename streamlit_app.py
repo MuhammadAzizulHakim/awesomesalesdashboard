@@ -7,10 +7,17 @@ import time
 
 @st.cache_data
 def get_data():
-    """Generate random sales data for Widget A through Widget Z"""
-    product_names = ["Widget " + letter for letter in string.ascii_uppercase]
-    average_daily_sales = np.random.normal(1_000, 300, len(product_names))
-    products = dict(zip(product_names, average_daily_sales))
+    """Generate random sales data for different electronic devices"""
+    electronic_devices = [
+        "Smartphone", "Laptop", "Tablet", "Smartwatch", "Headphones",
+        "Bluetooth Speaker", "Camera", "Drone", "Gaming Console", "Smart TV",
+        "Fitness Tracker", "E-reader", "VR Headset", "Smart Home Hub",
+        "Electric Scooter", "Portable Charger", "Wireless Earbuds", "Smart Light",
+        "Smart Thermostat", "Robot Vacuum", "Smart Doorbell", "3D Printer",
+        "Action Camera", "Streaming Stick", "Smart Display", "Smart Lock"
+    ]
+    average_daily_sales = np.random.normal(1_000, 300, len(electronic_devices))
+    products = dict(zip(electronic_devices, average_daily_sales))
 
     data = pd.DataFrame({})
     sales_dates = np.arange(date(2024, 1, 1), date(2025, 1, 1), timedelta(days=1))
